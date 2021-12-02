@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online meal service in India|myonlinemeal.com</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/*navigatin bar: logo and image */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 50px;
+    margin:3px 5px ;
+
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+/* navigatin bar: styling  */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+#navbar::before{
+    background-color: black;
+    content: "";
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem
+
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:rgb(68, 39, 39);
+    background-color: white;
+    
+}
+/* section:home */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 800px;
+}
+#home::before{
+    background:url('bag2.jpg');
+    content: "";
+    opacity: 0.8;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+    
+    text-align: center;
+}
+#home  p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex;
+    border: 2px solid black;
+}
+#services.box{
+    border: 2px solid blue;
+}
+#services.box img{
+    /* height: 160px; */
+    margin: 340px 340px;
+    display: block;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    margin: 17px;
+    font-size: 1.5rem;
+    padding: 6px 20px;
+    cursor: pointer;
+    background-color: brown;
+    color:white;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+.center{
+    text-align: center;
+}
+    
+
+
+
+
+    </style>
+</head>
+<body>
+<nav id="navbar">
+    <div id="logo">
+       
+    </div>
+    <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About us</a></li>
+        <li class="item"><a href="#">Contact us</a></li>
+        </ul>
+</nav>
+<section id="home">
+    <h1 class="h-primary">Welcome to Myonlinemeal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae, ipsam nostrum perspiciatis id </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium rerum tenetur illo itaque.</p>
+    <button class="btn">order now</button>
+</section>
+
+
+<section class="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="pizza.jpg" alt="" srcset=""  height="150px" width="150px" >
+            <h2 class="h-secondary center">Food Ordering</h2>
+            <p class="center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dignissimos dolorem aut, delectus nam inventore sint ut blanditiis reprehenderit autem, numquam corrupti. Nam ea, vel unde ab harum commodi deleniti voluptatibus eos nostrum qui!
+                </p>
+        </div>
+    </div>
+</section>
+
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aish fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"href="Css/style.css">
+<style>
+    /* Css reset */
+    body{
+        margin:0px;
+        padding: 0px;
+        background: url('img.jpg');
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .left{
+        display:inline-block;
+        /* border: 2px solid red; */
+        position:absolute;
+        left: 34px;
+        top: 20px;
+
+    }
+    /* to center use width,maegin:auto and display :block compulsory */
+    .mid{
+        display:block;
+        margin: 40px auto;
+        width: 40%;
+        /* border: 2px solid blue; */
+        
+    }
+    .right{
+        display:inline-block;
+        position:absolute;
+        right: 34px;
+        top: 20px;
+        cursor: pointer;
+        /* border: 2px solid green; */
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: rgb(90, 47, 47);
+        padding: 25px 15px;
+
+
+    }
+    
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: rgb(230, 21, 56);
+        
+
+    }
+    .navbar li a.active{
+        text-decoration: underline;
+        color: yellow;
+        
+
+    }
+    .navbar li a:active{
+        text-decoration: underline;
+        color: orange
+    }
+    
+    .left img{
+        /* to make white color black or vice versa use property= [filter:invert(100%)] */
+        width: 120px;
+
+    }
+    .left div{
+        text-align:center;
+    }
+    .btn{
+        padding: 10px 5px;
+        margin:2px 2px;
+        border: 2px solid blue;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:violet;
+    }
+    .container{
+        /* border: 2px solid black; */
+        margin:60px 30px;
+        display:inline-block;
+        width: 50%;
+        padding: 50px;
+        border-radius: 50px;
+    }
+    .form.group input{
+        text-align: center;
+        display:inline-block;
+        width: 40%;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 10px 200px;
+        border-radius: 50px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 20px;}
+        .form.group .btn{
+            text-align: center
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            margin: auto;
+            width: 40%;
+};
+        }
+
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="" srcset="">
+            <div>Aish's Fitness Center</div>
+
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#"> Services</a></li>
+
+            </ul>
+
+        </div>
+        <!-- right for right -->
+        <div class="right">
+        <button class="btn">call us now</button>
+        <button class="btn">email us</button>
+        
+        </div>
+    </header>
+    <div class="container">
+        <h1>This a special offer hurry up to join</h1>
+        <form action="noaction.php">
+        <div class="form group">
+            <input type="text"name="" placeholder="your name here">
+        </div>
+        <div class="form group">
+            <input type="email id"name="" placeholder="your email here">
+        </div>
+        <div class="form group">
+            <input type="number"name="" placeholder="your number here">
+        </div>
+        <div class="form group">
+            <input type="address"name="" placeholder="your address here">
+        </div>
+        <div class="form group">
+            <input type="gender"name="" placeholder="your gender here">
+        </div>
+        <div class="form group">
+            <input type="Age"name="" placeholder="your age here">
+        </div>
+        <button class="btn">submit</button>      
+    </form>
+     
+
+
+
+        
+    </div>
+
+</body>
+</html>
